@@ -13,7 +13,9 @@ export default function ToDoList() {
 
   const removeTodo = (index) => {
     setTodos(todos.filter((_, i) => i !== index));
+    
   };
+
 
   return (
     <div className="todo-container">
