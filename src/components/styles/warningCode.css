@@ -1,0 +1,91 @@
+/* Container styling */
+.show-warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Alert box styling */
+  #alert {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Animation for the alert box */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Heading inside alert */
+  #alert h2 {
+    font-size: 24px;
+    color: #ff4d4d;
+    margin-bottom: 15px;
+  }
+  
+  /* Paragraph inside alert */
+  #alert p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  
+  /* Button styling */
+  .show-warning button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4d4d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effect on buttons */
+  .show-warning button:hover {
+    background-color: #ff1a1a;
+    transform: translateY(-2px);
+  }
+  
+  /* Active effect on buttons */
+  .show-warning button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    #alert {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    #alert h2 {
+      font-size: 20px;
+    }
+  
+    #alert p {
+      font-size: 14px;
+    }
+  
+    .show-warning button {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+  

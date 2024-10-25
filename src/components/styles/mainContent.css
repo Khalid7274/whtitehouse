@@ -1,0 +1,21 @@
+.homepage-content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.main-image {
+    max-width: 75%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

@@ -1,0 +1,61 @@
+#example {
+  padding: 25px;
+  background-color: #f1f1f1; /* Lighter background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More depth */
+  max-width: 800px;
+  margin: auto;
+}
+
+#example h2 {
+  font-size: 28px; /* Larger font */
+  color: #222; /* Darker color */
+  margin-bottom: 15px; /* Increased margin for better spacing */
+  text-align: center; /* Center title */
+}
+
+#example menu {
+  display: flex;
+  justify-content: center; /* Center the menu */
+  gap: 15px; /* Increased gap */
+  margin-bottom: 20px; /* Space between menu and content */
+}
+
+#example menu li {
+  list-style: none;
+}
+
+#example menu button {
+  padding: 12px 18px; /* Increased padding */
+  border: 2px solid transparent; /* Add a transparent border for smoother transition */
+  background-color: rgb(224, 224, 224); /* Softer grey */
+  color: black;
+  border-radius: 6px; /* Slightly more rounded */
+  font-size: 16px; /* Larger font for better readability */
+  font-weight: 500; /* Slightly bold */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Light shadow for buttons */
+}
+
+#example menu button:hover {
+  background-color: #bfbfbf; /* Darker grey on hover */
+  color: #222; /* Darker text color on hover */
+}
+
+#example menu button:focus {
+  outline: none;
+  border: 2px solid #007bff; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Glow effect on focus */
+}
+
+#example menu button.active {
+  background-color: #007bff; /* Active state */
+  color: white; /* White text */
+  border: 2px solid #0056b3; /* Blue border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+#example menu button.active:hover {
+  background-color: #0056b3; /* Darker blue on hover for active button */
+}

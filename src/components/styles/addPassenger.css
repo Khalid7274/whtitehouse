@@ -1,0 +1,57 @@
+.txt-passenger {
+    padding: 20px;
+    background-color: #fdfdfd; /* Brighter background for a cleaner look */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px; /* Slightly larger width */
+    margin: 30px auto; /* More space around the element */
+    font-family: 'Arial', sans-serif; /* Added clean font */
+}
+
+.txt-passenger h2 {
+    font-size: 26px; /* Slightly larger */
+    color: #444; /* Darker color for better contrast */
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.txt-passenger hr {
+    border: 1px solid #ddd;
+    margin-bottom: 25px;
+    width: 80%; /* Narrower divider */
+}
+
+.txt-passenger h3 {
+    font-size: 22px; /* Larger for emphasis */
+    color: #555; /* Subtle color */
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.txt-passenger button {
+    padding: 12px 25px; /* Bigger buttons */
+    background-color: #e0e0e0; /* Light grey background */
+    color: #333; /* Darker text for readability */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    margin: 0 10px; /* Larger space between buttons */
+    font-size: 16px; /* Larger font size */
+}
+
+.txt-passenger button:hover {
+    background-color: #b0b0b0; /* Darker grey on hover */
+    transform: translateY(-2px); /* Subtle elevation effect */
+}
+
+.txt-passenger .active {
+    background-color: #8a2be2; /* Blueviolet as active color */
+    color: white;
+    border: 2px solid #5a189a; /* Darker outline */
+}
+

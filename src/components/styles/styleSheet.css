@@ -1,0 +1,83 @@
+
+.common-grid {
+    display: flex;
+    justify-content: center; /* Center both divs horizontally */
+    align-items: center;     /* Vertically center if needed */
+    gap: 20px;               /* Add some space between the two sections */
+    width: 100%;             /* Ensure the container takes the full width */
+    margin: 0 auto;          /* Center the container itself on the page */
+  }
+
+.admin, .office{
+    padding: 20px;
+    background-color: white;
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: auto; /* Adjust row height as needed */
+    grid-template-areas: 
+        "header header"
+        "content1 content2";
+    justify-items: center; /* Center content horizontally */
+    align-items: center; /* Align content vertically */
+    gap: 10px; /* Space between items */
+    width: 410px;
+    height: 500px;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.75);
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.content1 {
+    grid-area: content1;
+}
+
+.content2 {
+    grid-area: content2;
+}
+
+.admin .adminHeader,
+.office .adminHeader {
+    grid-area: header;
+    font-size: medium; 
+    text-decoration: none;
+    text-align: center; /* Center text horizontally */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100%; /* Ensure it takes the full height of its container */
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.admin img,
+.office img {
+    border-radius: 50%; /* Make the images circular */
+    width: 150px; /* Set fixed size for the image */
+    height: 150px; /* Set fixed size for the image */
+    object-fit: cover; /* Ensure image is properly contained */
+}
+
+.admin h3,
+.office h3 {
+    margin-top: 10px; /* Space between the image and text */
+    font-size: 18px; /* Text size for the labels */
+    color: #333; /* Text color */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .admin {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .office {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
